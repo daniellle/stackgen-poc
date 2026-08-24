@@ -8,5 +8,8 @@ crash.*.log
 .terraformrc
 terraform.rc
 
+# Lock files belong to root configurations, not reusable child modules.
+.terraform.lock.hcl
+
 # macOS
 .DS_Store
