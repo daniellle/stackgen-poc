@@ -1,0 +1,21 @@
+StackGen PoC — Test C evidence: custom module creation is blocked
+Captured: 2026-08-24 15:40:42 -03  host: MacBook-Pro
+CLI: 0.82.0   tenant: https://poc.cloud.stackgen.com
+Account: p13pinheiro@gmail.com   project: danielle-poc
+
+$ stackgen upload custom-modules --name s3-pci-archive-probe --provider aws \
+    --dir ./s3-pci-archive --version 1.0 --project=danielle-poc
+--- output ---
+2026-08-24 15:40:43 INFO  Pointing to StackGen at:
+                      │   https://poc.cloud.stackgen.com
+                      ├ version: 0.82.0
+                      └ service: stackgen
+2026-08-24 15:40:43 INFO  using project danielle-poc
+                      ├ version: 0.82.0
+                      └ service: stackgen
+2026-08-24 15:40:45 ERROR failed to create new custom module: status 403: you do
+                      │   not have the required permissions to create a custom
+                      │   resource template at the tenant level
+                      ├ version: 0.82.0
+                      └ service: stackgen
+--- exit code: 1 ---
