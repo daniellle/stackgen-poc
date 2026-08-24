@@ -51,7 +51,7 @@ resource "aws_security_group" "this" {
 resource "aws_db_instance" "this" {
   identifier     = var.name
   engine         = "postgres"
-  engine_version = "15.5"
+  engine_version = "15.18"
   instance_class = var.instance_class
 
   allocated_storage = 100
