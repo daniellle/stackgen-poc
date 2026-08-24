@@ -1,0 +1,12 @@
+# Terraform working directories and provider binaries
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+
+# macOS
+.DS_Store

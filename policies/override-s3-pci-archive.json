@@ -1,0 +1,12 @@
+[
+  {
+    "Name": "Hardened S3 Archive Substitution Policy",
+    "OverrideResourceTypeDetails": {
+      "aws_s3": {
+        "OverrideType": "aws_s3_bucket",
+        "Locked": true,
+        "TemplateID": "REPLACE_WITH_S3_PCI_ARCHIVE_MODULE_UUID"
+      }
+    }
+  }
+]
